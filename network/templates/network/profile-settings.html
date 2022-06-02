@@ -1,0 +1,21 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+
+  <!-- Alert messages  --> 
+  {% include 'network/messages.html' %}
+  
+  <h2 class="text-center mb-4">Profile Settings</h2>
+  <div class="container">
+    <form class="bg-white p-4" id="settings-form" enctype="multipart/form-data" method="POST">
+      {% csrf_token %}
+
+      {{ profile_form }}
+      
+      <div class="text-right">
+        <button type="submit" class="btn btn-primary col-sm-2 mt-2">Save</button>
+      </div>
+    </form>
+  </div>
+
+{% endblock %}

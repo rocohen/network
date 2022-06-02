@@ -1,0 +1,240 @@
+body {
+  position: relative;
+  background-color: #e7f0f8;  
+}
+
+
+.user-pic {
+  width: 2rem;
+  border-radius: 50%;
+  -moz-box-shadow: inset -5px -5px 5px #888;
+  -webkit-box-shadow: inset -5px -5px 5px #888;
+  box-shadow: inset -5px -5px 5px #888;
+}
+
+.user-pic-post {
+  width: 3.2rem;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+}
+
+.user-name-link {
+  color: #212529;
+  font-weight: 700;
+}
+
+
+.container .media {
+  padding: 1em;
+  border-radius: 3px;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+.container .media:not(:last-child) {
+  margin-bottom: 1.2em;
+}
+
+.flex-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.flex-container span {
+  margin-left: .2em;
+  margin-right: .2em;
+}
+
+.media-body small {
+  color: #777
+}
+
+.action-container {
+  display: flex;
+  color: #6c757d;
+}
+
+.action-container div {
+  padding: .3em;
+}
+
+
+/* ========== LINKS/BUTTONS =========== */
+
+.icon-link {
+  color: #888;
+  display: inline-block;
+  padding-left: .5em;
+  padding-bottom: .4em;
+  padding-top: .2em;
+  padding-right: .5em;
+  border-radius: 50%;
+}
+
+.icon-link svg {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: text-bottom;
+}
+
+.like-btn:hover.like-btn ~ span,
+.like-btn:hover.like-btn {
+  color: #f33;
+}
+
+.like-btn:hover.like-btn {
+  background-color: rgba(255, 51, 51, 0.2)
+}
+
+.edit-link:hover.edit-link ~ span,
+.edit-link:hover.edit-link,
+.current {
+  color: #007bff !important;
+}
+
+.edit-link:hover.edit-link {
+  background-color: rgba(0, 123,255, 0.2)
+}
+
+.posts-link:hover.posts-link ~ span,
+.posts-link:hover.posts-link {
+  color: #00C6B3;
+}
+
+.posts-link:hover.posts-link {
+  background-color: rgba(0, 198, 179, 0.2);
+}
+
+
+.like-icon-fill {
+ color: #f33;
+} 
+
+/* ========== New Post Form =========*/
+
+.new-post-form {
+  background-color: #fff;
+  padding: 1.2em;
+  border-radius: 3px;
+}
+
+.new-post-form button {
+  margin-top: 1em;
+}
+
+/* =========== Footer =========== */
+
+footer {
+  text-align: center;
+  padding: 2em;
+  margin-top: 3em;
+}
+
+/* ======= Scroll to Top Pointer ========= */
+
+.btnScrollToTop {
+  display: inline-block;
+  background-color: #007bff;
+  padding: .8em 1em;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btnScrollToTop:active {
+background-color: #228dff;
+}
+
+/* ================ User Profile Styles ==================*/
+
+.profile {
+  padding: 1.5em 1.5em;
+  border-radius: 1rem;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.profile__user-pic {
+  width: 4.5rem;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+}
+
+.profile__heading div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.profile__heading h5 {
+  margin-left: .4em;
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: #383e45;
+}
+
+.profile__heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: .8em;
+}
+
+.profile button {
+  font-weight: 700;
+  letter-spacing: .05rem;
+
+}
+
+.profile__user-bio {
+  line-height: 1.65rem;
+}
+
+.profile__user-stats {
+  display: flex;
+}
+
+.profile__user-stats div:not(.profile__user-likes) {
+  margin-right: 7em;
+}
+
+.profile__user-calendar svg,
+.profile__user-location svg,
+.profile__user-website svg,
+.profile__user-followers,
+.profile__user-following,
+.profile__user-likes {
+  color: #6c757d;
+}
+
+.profile__user-calendar svg,
+.profile__user-location svg,
+.profile__user-website svg {
+  margin-right: .4em;
+}
+
+.profile__user-followers span,
+.profile__user-following span,
+.profile__user-likes span {
+  display: block;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #383e45;
+}
+
+.container {
+  max-width: 50rem;
+}
+
+/* ============== Responsive Styles ==============*/
+
+@media only screen and (max-width: 600px) { 
+
+  .action-container div span:not(.likes_count) {
+    display: none
+  }
+
+}
+
+
